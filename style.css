@@ -1,114 +1,127 @@
 body{
 	background-color: #e0e0e0;
+	width: 100%;
+	/*height: 675px;*/
+	/*background-image: url(https://www.walldevil.com/wallpapers/a79/web-background-gradient-blue-minimalistic.jpg);*/
 }
 .container{
 	display: flex;
-	width:100%;
 	flex-direction: column;
 }
 .container .container-steps{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 100%;
+
 }
 .container .container-steps .list-steps{
-	display: flex;
 	list-style: none;
-	width: 100%;
-	flex-direction: row;
-	padding-left: 0px;
+	display: flex;
 	justify-content: space-around;
-}
-.container .container-steps:after{
-	content: "";
-	width: 100%;
-	height: 1px;
-	background-color: #424242;
+	padding-left: 0px;
+	height: 50px;
 }
 .container .container-steps .list-steps .step{
-	display: flex;
-	justify-content: center;
-
-	background-color: green;
-	width: 30px;
-	height: 30px;
-	border-radius: 50px;
-	border-width: 10px;
-	border-color: green;
-	background-color: #607d8b;
-}
-.container .container-steps .list-steps .step.element-1{
-
+	width: 100%;
+	text-align: center;
+	align-self: center;
 }
 .container .container-steps .list-steps .step a{
-	align-self: center;
 	text-decoration: none;
-	color:white;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	padding-left: 11px;
-	padding-right: 11px;
-		
-}
-.container .container-steps .list-steps .step a:before{
-	content: "";
+	padding-left: 94px;
+	padding-right: 94px;
+	background-color: red;
+	padding-top: 25px;
+	padding-bottom:25px;
 }
 .container .controls{
-	margin-top: 26px;
 	display: flex;
-	justify-content: flex-start;
 }
 .container .controls .controls-holder{
 	display: flex;
-	width: 100%;
-	justify-content: space-around;
-	/*background-color: green;*/
+	/*width: 100%;*/
+	margin:0 auto;
 }
 .container .controls .controls-holder .viewport{
 
 }
-.container .controls .controls-holder .form-holder {
+.container .controls .controls-holder .form-holder{
 	display: flex;
-	justify-content: center;
+	/*max-width: 500px;*/
+}
+.container .controls .controls-holder .form-holder .form-holder-icons{
+	display: flex;
+}
+i.fa.fa-chevron-left.fa-2x{
+	display: flex;
+	background-color: blue;
+}
+i.fa.fa-chevron-right.fa-2x{
+	display: flex;
+	background-color: blue;	
+}
+i.fa.fa-chevron-left.fa-2x::before{
+	align-self: center;
+}
+i.fa.fa-chevron-right.fa-2x::before{
+	align-self: center;
+}
+.container .controls .controls-holder .form-holder .form-holder-icons .form-modell{
+	display: flex;
 	flex-direction: column;
-	height: 100%;
+	justify-content: space-around;
 }
-.container .controls .controls-holder .form-holder .form-selection{
-	height: 100%;
+.container .controls .controls-holder .form-holder .form-holder-icons .form-modell .info{
+	text-align: center;
+
 }
-.container .controls .controls-holder .form-holder .form-selection .grid{
+.container .controls .controls-holder .form-holder .form-holder-icons .form-modell .grid{
+	list-style: none;
 	display: flex;
 	justify-content: space-around;
-	flex-direction: row;
+	flex-wrap: wrap;
 	padding-left: 0px;
-	margin-top: 10px;
-	margin-bottom: 0px;
-	list-style: none;
-	/*height: 98%;*/
+	margin: 0px auto;
+	width: 80%;
 }
-.container .controls .controls-holder .form-holder .form-selection .grid .element{
-	/*position: absolute;*/
-	margin-left: 5px;
-	margin-right: 5px;
-	
-}
-.container .controls .controls-holder .form-holder .form-selection .grid .element:hover{
-	width: 170px;
-	height: 170px;
-	transition:width 2s,height 2s;
-}
-.container .controls .controls-holder .form-holder .button-holder{
+.container .controls .controls-holder .form-holder .form-holder-icons .form-color{
+	position: relative;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-around;
+	z-index: -10;
 }
-.container .controls .controls-holder .form-holder .button-proceed{
-	background-color: #0277bd;
-	color: white;
-	width: 100px;
+.container .controls .controls-holder .form-holder .form-holder-icons .form-carousel .form-color .info{
+	text-align: center;
+
+}
+.container .controls .controls-holder .form-holder .form-holder-icons .form-carousel .form-color .grid{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-left: 0px;
+	margin: 0px auto;
+	width: 80%;
+}
+.container .controls .controls-holder .form-holder .form-holder-icons .form-carousel .form-color .grid .element-1{
+	background-color: red;
+	width: 50px;
 	height: 50px;
-	font-size: 15px;
-	border-radius: 5px;
-	border-color: #0277bd; 
-	border-style: solid;
+	border-radius: 25px;
+}
+.container .controls .controls-holder .form-holder .form-holder-icons .form-carousel .form-color .grid .element-2{
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;	
+}
+.container .controls .controls-holder .form-holder .form-holder-icons .form-carousel .form-color .grid .element-3{
+	background-color: green;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;	
+}
+.form-carousel{
+	display: flex;
+	position: relative;
+	flex-direction: wrap;
+	overflow: hidden;
 }
