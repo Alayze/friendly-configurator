@@ -4,18 +4,22 @@
 	<title></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Merriweather+Sans|Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="jquery/jquery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 <div class="container">
 	<div class="container-steps">
 		<ul class="list-steps">
-			<li class="step"><a href="#">1</a></li>
-			<li class="step"><a href="#">2</a></li>
-			<li class="step"><a href="#">3</a></li>
-			<li class="step"><a href="#">4</a></li>
-			<li class="step"><a href="#">5</a></li>
-			<li class="step"><a href="#">6</a></li>
-			<li class="step"><a href="#">7</a></li>
+			<li class="step"><a href="#"><span>1</span></a></li>
+			<li class="step"><a href="#"><span>2</span></a></li>
+			<li class="step"><a href="#"><span>3</span></a></li>
+			<li class="step"><a href="#"><span>4</span></a></li>
+			<li class="step"><a href="#"><span>5</span></a></li>
+			<li class="step"><a href="#"><span>6</span></a></li>
+			<li class="step"><a href="#"><span>7</span></a></li>
 		</ul>
 	</div>
 	<div class="controls">
@@ -28,24 +32,56 @@
 
 			<div class="form-holder">
 
-				<div class="form-selection">
-					<ul class = "grid">
-					<li class="element"><img src="http://placehold.it/150x150""></img></li>
+			<div class="form-holder-icons">
+				<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+				<div class="form-carousel">
 					
-					<li class="element"><img src="http://placehold.it/150x150"></img></li>
-					<li class="element"><img src="http://placehold.it/150x150"></img></li>
-					<li class="element"><img src="http://placehold.it/150x150"></img></li>
+					<div class="form-modell">
 
-					</ul>
-					
+						<div class="info">
+							<span>Scegliere il modello</span>
+						</div>
+
+						<ul class = "grid">
+							<li class="element"><img src="http://placehold.it/150x150""></li>
+			
+							<li class="element"><img src="http://placehold.it/150x150"></li>
+
+							<li class="element"><img src="http://placehold.it/150x150"></li>
+
+							<li class="element"><img src="http://placehold.it/150x150"></li>
+
+						</ul>
+						
+					</div>
+
+					<div class="form-color">
+						<div class="info">
+							<span>Scegliere il colore</span>
+						</div>
+
+						<ul class = "grid">
+							<li class="element-1">1</li>
+			
+							<li class="element-2">2</li>
+
+							<li class="element-3">3</li>
+
+
+						</ul>
+					</div>
 				</div>
-				<div class="button-holder">
-						<button class="button-proceed">Proceed</button>	
-				</div>
+				<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+
+				
+
+			</div>
+			
 			</div>
 		</div>	
 	</div>
 	
 </div>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
